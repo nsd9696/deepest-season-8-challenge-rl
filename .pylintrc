@@ -1,0 +1,6 @@
+[MASTER]
+extension-pkg-whitelist=numpy,torch
+
+[TYPECHECK]
+ignored-modules=numpy,torch,omegaconf
+ignored-classes=numpy,torch

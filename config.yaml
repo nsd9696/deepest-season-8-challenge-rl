@@ -1,0 +1,19 @@
+data_path: 'save/'
+env_name: 'CartPole-v0'
+model:
+  hidden_dim: 128
+  gamma: 0.99
+  lambda_gae: 0.96
+  epsilon_clip: 0.2
+  critic_coef: 0.5
+  entropy_coef: 0.01
+optimizer:
+  type: 'Adam'
+  lr: 0.001
+replay:
+  capacity: 20000
+train:
+  max_episodes: 3000
+  max_timesteps: 300
+  batch_size: 8
+  n_epochs: 10
